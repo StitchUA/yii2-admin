@@ -31,6 +31,7 @@ class AuthItem extends Model
     {
         return [
             [['name', 'ruleName', 'description'], 'safe'],
+            [['name', 'ruleName', 'description'], 'default', 'value' => ''],
             [['type'], 'integer'],
         ];
     }
